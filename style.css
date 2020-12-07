@@ -1,3 +1,64 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  width: min(700px, 80vw);
+}
+
+h1,
+button,
+thead {
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+div {
+  align-items: center;
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+button {
+  background: #a5d6a7;
+  border: whitesmoke;
+
+  /* https://codepen.io/sdthornton/pen/wBZdXq */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+button:focus,
+button:hover {
+  cursor: pointer;
+}
+
+table {
+  border-spacing: 0 3px;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+tr {
+  margin: 8px;
+}
+
+td {
+  margin: 0;
+  padding: 0.5rem 0.25rem;
+  text-align: center;
+}
+
+label {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
 }
