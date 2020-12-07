@@ -1,16 +1,14 @@
-/**
- * TODO: Import some components
- * U might also need to import 'api' to get your initial data?
- */
-import testComponent from "./components";
+import api from "./api";
+import { Main } from "./components";
+import store from "./store";
 
 const root = document.getElementById("root");
 
 const render = () => {
-  root.innerHTML = testComponent();
+  root.innerHTML = Main();
 };
 
-// ⚠️ Don't 4get to actually render! 😆
-render();
-
-// TODO: Use api to 'fetch' 'initial data?' Maybe 'api.index()'?
+api.index().then((itemData) => {
+  store.setData(itemData);
+  render();
+});
