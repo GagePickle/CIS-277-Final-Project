@@ -1,9 +1,13 @@
+import db from "./db";
+
 export default {
   async index() {
-    const res = await fetch(
-      "https://my-json-server.typicode.com/gagepickle/items-json/items"
-    );
+    const docRef = await db.collection("items").get();
 
-    return res.json();
+    return docRef.docs.map((doc) => ({ ...doc.data() }));
+  },
+
+  async create(item) {
+    return db.collection("items").add(item);
   },
 };
