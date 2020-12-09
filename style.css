@@ -1,5 +1,7 @@
 body {
-  font-family: "Roboto", sans-serif;
+  background-color: rgb(37, 37, 37);
+  color: #9a8866;
+  font-family: "Source Sans Pro", Roboto, sans-serif;
   margin: 0 auto;
   width: min(700px, 80vw);
 }
@@ -16,13 +18,12 @@ h1 {
 }
 
 div {
-  align-items: center;
   display: flex;
   padding: 0.5rem 0;
 }
 
 button {
-  background: #a5d6a7;
+  background: #9a8866;
   border: whitesmoke;
 
   /* https://codepen.io/sdthornton/pen/wBZdXq */
@@ -36,19 +37,18 @@ button:hover {
 }
 
 table {
+  background-color: rgb(37, 37, 37);
   border-spacing: 0 3px;
   margin-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem;
   width: 100%;
 }
 
 table,
 tr,
 td {
-  border: 1px solid black;
-}
-
-tr {
-  margin: 8px;
+  border: 1px solid #9a8866;
+  border-collapse: collapse;
 }
 
 td {
@@ -61,4 +61,14 @@ label {
   left: -9999px;
   position: absolute;
   top: -9999px;
+}
+
+form {
+  padding: 0.5rem 0.5rem;
+}
+
+#banner {
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
