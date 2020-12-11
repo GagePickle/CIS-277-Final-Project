@@ -86,5 +86,5 @@ span[data-order="desc"]::before {
 }
 
 span[data-order="asc"]::after {
-  content: "🔺";
+  content: "xxx";
 }

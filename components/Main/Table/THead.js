@@ -12,8 +12,8 @@ export default () => `
         Item Price<button></button>
       </td>
       <td>Additional Information
-      <button data-prop="additionalInfo" >
-        <span data-order="desc"></span>
+      <button data-prop="additionalInfo">
+        <span data-order="asc"></span>
         </button></td>
     </tr>
   </thead>
