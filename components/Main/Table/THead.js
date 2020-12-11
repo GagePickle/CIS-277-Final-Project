@@ -1,10 +1,12 @@
 export default () => `
   <thead>
     <tr>
-      <td class="hover">
-        Item Name<button>
-          <!-- Use CSS to give adequate padding and 'click area' -->
-        <span>🔻</span></button>
+      <td>
+        Item Name
+        <!-- Use CSS to give adequate padding and 'click area' -->
+        <button data-prop="itemName">
+        <span>🔻</span>
+        </button>
       </td>
       <td>
         Item Price<button></button>
