@@ -11,7 +11,10 @@ export default () => `
       <td>
         Item Price<button></button>
       </td>
-      <td>Additional Information</td>
+      <td>Additional Information
+      <button data-prop="additionalInfo">
+        <span>🔻</span>
+        </button></td>
     </tr>
   </thead>
 `;
