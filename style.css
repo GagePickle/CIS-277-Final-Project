@@ -37,6 +37,12 @@ button:hover {
   cursor: pointer;
 }
 
+thead:focus,
+thead:hover {
+  background-color: rgb(66, 66, 66);
+  cursor: pointer;
+}
+
 table {
   background-color: rgb(37, 37, 37);
   border-spacing: 0 3px;
