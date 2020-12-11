@@ -1,9 +1,20 @@
 export default () => `
   <thead>
     <tr>
-      <td>Item Name</td>
-      <td>Item Price</td>
-      <td>Additional Information</td>
+      <td>
+        Item Name
+        <!-- Use CSS to give adequate padding and 'click area' -->
+        <button data-prop="itemName">
+        <span></span>
+        </button>
+      </td>
+      <td>
+        Item Price<button></button>
+      </td>
+      <td>Additional Information
+      <button data-prop="additionalInfo">
+        <span data-order="asc"></span>
+        </button></td>
     </tr>
   </thead>
 `;

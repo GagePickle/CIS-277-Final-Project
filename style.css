@@ -3,6 +3,7 @@ body {
   color: #9a8866;
   font-family: "Source Sans Pro", Roboto, sans-serif;
   margin: 0 auto;
+  transform: scale(1.5, 1.2);
   width: min(700px, 80vw);
 }
 
@@ -33,6 +34,12 @@ button {
 
 button:focus,
 button:hover {
+  cursor: pointer;
+}
+
+thead:focus,
+thead:hover {
+  background-color: rgb(66, 66, 66);
   cursor: pointer;
 }
 
@@ -71,4 +78,13 @@ form {
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  padding-top: 4rem;
+}
+
+span[data-order="desc"]::before {
+  content: "🔻";
+}
+
+span[data-order="asc"]::after {
+  content: "xxx";
 }
