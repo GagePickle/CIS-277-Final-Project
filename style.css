@@ -80,3 +80,11 @@ form {
   justify-content: center;
   padding-top: 4rem;
 }
+
+span[data-order="desc"]::before {
+  content: "🔻";
+}
+
+span[data-order="asc"]::after {
+  content: "🔺";
+}
