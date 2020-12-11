@@ -2,14 +2,12 @@ export default () => `
   <thead>
     <tr>
       <td class="hover">
-        Item Name<button><span data-test="test" data-order="${
-          localStorage.getItem("itemName") || "desc"
-        }" data-prop="itemName"></span></button>
+        Item Name<button>
+          <!-- Use CSS to give adequate padding and 'click area' -->
+        <span>🔻</span></button>
       </td>
       <td>
-        Item Price<button><span data-order="${
-          localStorage.getItem("itemPrice") || "desc"
-        }" data-prop="itemPrice"></span></button>
+        Item Price<button></button>
       </td>
       <td>Additional Information</td>
     </tr>
